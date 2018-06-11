@@ -7,7 +7,7 @@ package carlosernestovasquezpaz.world;
 
 /**
  *
- * @author rafa
+ * @author Carlos "TheNegga"
  */
 public class CarlosErnestoVasquezPazWorld {
 
