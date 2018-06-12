@@ -65,24 +65,7 @@ public class CarlosErnestoVasquezPazWorld {
         return tipo_Raza;
     }
     
-    /*
-    public static void Selector_inicio(String nombre1,String nombre2){
-        ArrayList jugadores= new ArrayList();
-        jugadores.add(1);
-        jugadores.add(2);
-        Random eleccion= new Random();
-        int seleccionado=eleccion.int();
-        String seleccionFinal="";
-        switch (seleccionado){
-            case 1:
-                
-            
-        }      
-        
-        
-        
-        
-    }*/
+   
     
     public static void main(String[] args) {
          Scanner sc= new Scanner(System.in);
@@ -91,11 +74,11 @@ public class CarlosErnestoVasquezPazWorld {
 	System.out.println("|                 Bienvenido                   |");
 	System.out.println("-----------------------------------------------");
 	System.out.println("");
-	System.out.println("ingrese su nombre Jugador 1:");
+	System.out.println(">> ingrese su nombre Jugador 1:");
 	String mono1=sc.nextLine(); 
 	System.out.println("-----------------------------------------------");
 	System.out.println("");
-	System.out.println("ingrese su nombre Jugador 2:");
+	System.out.println(">> ingrese su nombre Jugador 2:");
 	String mono2=sc.nextLine(); 
 	System.out.println("-----------------------------------------------");
 	System.out.println("");
