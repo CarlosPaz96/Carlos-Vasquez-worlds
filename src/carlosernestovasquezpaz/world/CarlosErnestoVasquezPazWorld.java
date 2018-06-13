@@ -14,26 +14,13 @@ import static java.lang.Math.random;
 import java.util.*;
 import java.util.stream.IntStream;
 
+
 public class CarlosErnestoVasquezPazWorld {
 
     /**
      * @param args the command line arguments
      */
     
-    public static int menu_opciones(String nombre){
-        Scanner sc2= new Scanner(System.in);
-        
-        System.out.println("-----------Menu de Razas-----------");
-        System.out.println("1.Barbaros.");
-        System.out.println("2.Magos.");
-        System.out.println("3.Esqueletos");
-        System.out.println("-------------------------------------------");
-        System.out.println(nombre+" escoja una de las opciones:");
-        int omr= sc2.nextInt();
-        //int opra;
-        int respuesta=validar_Raza(omr,nombre);
-        return respuesta;
-    }
     
     public static int validar_Raza(int opv,String nombrev){
         if(opv!=1 && opv!=2 && opv!=3){
@@ -79,7 +66,11 @@ public class CarlosErnestoVasquezPazWorld {
     }
     
     public static void main(String[] args) {
-         Scanner sc= new Scanner(System.in);
+        raza raza1 = new barbaros();
+        System.out.println(raza1.nombre());
+        
+        
+        Scanner sc= new Scanner(System.in);
 	    
 	System.out.println("-----------------------------------------------");
 	System.out.println("|                 Bienvenido                   |");
@@ -87,21 +78,33 @@ public class CarlosErnestoVasquezPazWorld {
 	System.out.println("");
 	System.out.println(">> ingrese su nombre Jugador 1:");
 	String mono1=sc.nextLine(); 
+        
+        Jugador player= new Jugador();
+        player.nombre=mono1;
+        
 	System.out.println("-----------------------------------------------");
 	System.out.println("");
 	System.out.println(">> ingrese su nombre Jugador 2:");
 	String mono2=sc.nextLine(); 
+        
+        Jugador player2= new Jugador();
+        player2.nombre=mono2;
+        
 	System.out.println("-----------------------------------------------");
 	System.out.println("");
 	//System.out.println("mono2 es: "+mono2);
-	String opcion_mono1=conversor(mono1);
-	String opcion_mono2=conversor(mono2);
+        menusDeOpciones opcion=new menusDeOpciones();
+                
+	player.raza=opcion.conversor(player.nombre);
+	player2.raza=opcion.conversor(player2.nombre);
         System.out.println("-----------------------------------------------");
-        System.out.println(mono1+" su raza es "+opcion_mono1);
+        System.out.println(player.nombre+" su raza es "+player.raza);
         System.out.println("-----------------------------------------------");
-        System.out.println(mono2+" su raza es "+opcion_mono2);
+        System.out.println(player2.nombre+" su raza es "+player2.raza);
         System.out.println("-----------------------------------------------");
-        
+        String nombre=opcion.Select_Aleatoria();
+        System.out.println(nombre);
     }
     
 }
+
