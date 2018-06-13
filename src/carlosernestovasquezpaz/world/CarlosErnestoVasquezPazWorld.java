@@ -65,7 +65,18 @@ public class CarlosErnestoVasquezPazWorld {
         return tipo_Raza;
     }
     
-   
+    public static String Select_Aleatoria(){
+        int aleatorio = (int) (Math.random() * 2) + 1;
+        String nombre_f="";
+        if (aleatorio==1){
+            nombre_f= "salio  el uno";
+            
+        }
+        if(aleatorio==2){
+            nombre_f= "salio  el dos";
+        }
+        return nombre_f;
+    }
     
     public static void main(String[] args) {
          Scanner sc= new Scanner(System.in);
