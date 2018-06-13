@@ -37,7 +37,7 @@ public class CarlosErnestoVasquezPazWorld {
     
     public static int validar_Raza(int opv,String nombrev){
         if(opv!=1 && opv!=2 && opv!=3){
-            System.out.println("--------------------------------------------------------------------");
+            System.out.println("---------------------------------------------------------------------");
             System.out.println("|La opcion es incorrecta, porfavor escoja entre las opciones 1,2,3.|");
             System.out.println("--------------------------------------------------------------------");
             int validado=menu_opciones(nombrev);
