@@ -7,7 +7,7 @@ package carlosernestovasquezpaz.world;
 
 /**
  *
- * @author carlosPaz
+ * @author CarlosPaz
  */
 public class barbaros implements raza{
 
