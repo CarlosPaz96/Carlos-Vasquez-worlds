@@ -7,7 +7,7 @@ package carlosernestovasquezpaz.world;
 
 /**
  *
- * @author rafa
+ * @author CarlosPaz
  */
 public interface raza {
     public String nombre();
