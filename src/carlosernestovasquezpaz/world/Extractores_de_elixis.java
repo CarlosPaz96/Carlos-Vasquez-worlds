@@ -7,7 +7,7 @@ package carlosernestovasquezpaz.world;
 
 /**
  *
- * @author UCA
+ * @author CarlosPaz
  */
 public class Extractores_de_elixis implements edificio{
 
