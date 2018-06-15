@@ -7,7 +7,7 @@ package carlosernestovasquezpaz.world;
 
 /**
  *
- * @author rafa
+ * @author CarlosPaz
  */
 public class Jugador {
     public String nombre;
